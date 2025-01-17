@@ -15,16 +15,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 100;
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
     background-color: var(--sfondo);
     color: var(--testo-primario);
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -73,51 +68,90 @@ body {
     background-color: var(--navbar-hover);
 }
 
-/* Logo */
-.logo {
+/* Header */
+.contact-header {
     text-align: center;
-    margin: 20px 0;
+    color: var(--testo-primario);
+    padding: 50px 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-    display: flex;
-    justify-content: center;
-    scale: 100%;
-    width: 100%;
-    max-width: 500px;
+.contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-/* Social container */
-.social-container {
+.contact-header p {
+    font-size: 18px;
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    color: var(--testo-primario);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+    color: var(--blu-scuro);
+}
+
+.map-section p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Contact Links */
+.contact-links {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa-tenue);
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-links h2 {
+    color: var(--blu-scuro);
+    margin-bottom: 20px;
+}
+
+.links-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin: 20px 0;
 }
 
-.social-item {
-    text-align: center;
-}
-
-.social-item a {
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--blu-scuro);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.social-item img {
-    width: 45%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.5s;
+.contact-link i {
+    font-size: 20px;
 }
 
-.social-item img:hover {
-    transform: scale(1.1);
+.contact-link:hover {
+    background-color: var(--verde-acqua);
 }
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
+
+footer {
     background-color: var(--navbar);
     color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
